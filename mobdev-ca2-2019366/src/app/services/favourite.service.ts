@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-//import { Storage } from '@angular/storage';
+import { Storage } from '@ionic/storage';
 
 const STORAGE_KEY = 'favouriteEpisodes';
 
