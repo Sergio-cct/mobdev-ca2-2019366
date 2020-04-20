@@ -22,15 +22,15 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'caracters',
+        path: 'characters',
         children: [
           {
             path: '',
-            loadChildren: () => import('../caracters/caracters.module').then( m => m.CaractersPageModule)
+            loadChildren: () => import('../characters/characters.module').then( m => m.CharactersPageModule)
           },
           {
             path: ':id',
-            loadChildren: () => import('../caracter-details/caracter-details.module').then( m => m.CaracterDetailsPageModule)
+            loadChildren: () => import('../character-details/character-details.module').then( m => m.CharacterDetailsPageModule)
           }
         ]
       },
